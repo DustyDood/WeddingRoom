@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="./style.css" style="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Work+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<h1>Welcome to a rousing game of Battleship!</h1>
+<p class="Beffy">When Beff was younger, he loved playing Battleship. Now, he plays with his yachts.
+  Considering the tasks that you've subjected yourself to for an undisclosed amount of Nozama money, we'll stick to digital ships.
+<p>The waters around these parts are treacherous and filled with enemies!
+  A little blue bird told me we're looking for a Battleship (4 squares), a Cruiser (3 squares), and a Submarine (3 squares).
+<p>Each time you frag a frigate the coordinates will appear here. Good luck, and happy hunting!
+  <div class = "coordinates">
+    Enemy ship coordinates: <span class = "secret" id="hashtag"># </span> <span class = "secret" id = "Cell03">A4</span> <span class = "secret" id = "Cell04">A5</span>
+    <span class = "secret" id = "Cell05">A6</span> <span class = "secret" id = "Cell06">A7</span> <span class = "secret" id = "Cell36">D7</span>
+    <span class = "secret" id = "Cell46">E7</span> <span class = "secret" id = "Cell56">F7</span> <span class = "secret" id = "Cell64">G5</span>
+    <span class = "secret" id = "Cell74">H5</span> <span class = "secret" id = "Cell84">I5</span>
+  </div>
+
+<table id="myTable">
+</table>
+
+<script>
+
+myFunction();
+
+var rexrex = 0;
+
+var gameBoard = [
+				[0,0,0,1,1,1,1,0,0,0],
+				[0,0,0,0,0,0,0,0,0,0],
+				[0,0,0,0,0,0,0,0,0,0],
+				[0,0,0,0,0,0,1,0,0,0],
+				[0,0,0,0,0,0,1,0,0,0],
+				[0,0,0,0,0,0,1,0,0,0],
+				[0,0,0,0,1,0,0,0,0,0],
+				[0,0,0,0,1,0,0,0,0,0],
+				[0,0,0,0,1,0,0,0,0,0],
+				[0,0,0,0,0,0,0,0,0,0]
+      ];
+
+
+function myFunction() {
+	var table = document.getElementById("myTable");
+    for (x = 0; x < 10; x++) {
+    	var row = table.insertRow();
+        for (y = 0; y < 10; y++) {
+    		    var cell = row.insertCell();
+            cell.Id = "" + x + y;
+    		    cell.innerHTML = "Click to fire";
+            cell.align = "middle";
+            cell.addEventListener("click", testing, false);
+        }
+    }
+}
+
+function testing() {
+	//alert("Success");
+    var tora = event.target.Id;
+    //alert(tora);
+    //alert(gameBoard[tora[0]][tora[1]]);
+    if (gameBoard[tora[0]][tora[1]] == 0 ) {
+      event.target.innerHTML = "0";
+      event.target.style.backgroundColor = "grey";
+
+
+    }
+    else if (gameBoard[tora[0]][tora[1]] == 1) {
+      event.target.innerHTML = "X";
+      event.target.style.backgroundColor = "red";
+      var toratora = "Cell" + tora;
+      document.getElementById(toratora).style.display = "inline";
+      event.target.removeEventListener("click", testing, false);
+      rexrex++;
+      if (rexrex == 10) {
+        alert("Yar! You've won! Me and my little blue birdy thank you!");
+        document.getElementById("hashtag").style.display = "inline";
+        var ele = document.getElementsByClassName("secret");
+        for (eleInt = 0; eleInt < 11; eleInt++) {
+          ele[eleInt].classList.add("Nia");
+        }
+
+      }
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>

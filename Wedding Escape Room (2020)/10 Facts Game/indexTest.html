@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Fun Facts about Christine and Dusty</title>
+    <link href="./resources/css/style.css" style="text/css" rel="stylesheet">
+    <link href="./javascript.js" style="text/javascript" rel="stylesheet">
+  </head>
+  <body>
+    <!--Hey! no peeking here. I have to make this difficult for certain people...-->
+
+    <h1>What better way to celebrate our <span class="LoL">wedding</span>
+      than with some fun facts about Christine and Dusty!</h1>
+    <br>
+    <p> 1. We first met at UCLA our freshman year, as we both lived on Hedrick <span class = "SORCERESS">six</span> south!
+    <p> 2. While <span class = "CAPS">DUSTY blue</span> is one of the primary colors of the wedding, I had no say in the matter myself.
+      It's like the opposite of that <span class="ALANIS">Alanis Morissette</span> song... <!--Put blue class here-->
+    <p> 3. My family jokes that I'm incredibly lucky since I'm the "number <span class = "S3">three</span>" son.
+      High school friends would label me as "<span class = "S2">200</span>% <span class = "TOYS">Cheater</span>".
+      Some things I've <span Class = "S1">won</span> include:
+      <div class = "TORA">
+      -Mew for the original Pokemon during a Toys R' Us promotion (There was a huge line at <span class="SORCERESS">six</span> in the morning!)
+      <br>  -GDQ's Grand Prize for Summer <span class="TOYS">2018</span>
+      <br>  -Christine's heart (Note: This is too cheesey for me, but I'm just leaving it here to make Christine uncomfortable)
+      </div>
+    <p> 4. I can <span class = "S1">add</span> a few inches to my back by sticking out my shoulder blades. They almost look like bony <span class="ALANIS">wings</span>.
+    <p> 5. One of Christine's favorite games is Ni No Kuni <span class = "S4">Two</span>, which blends Studio Ghibli art style with city building and Kingdom Hearts action.
+      She especially loves the derpy, <span class = "CAPS">purple HIGGLEDY</span>. <!--Put purple class here -->
+    <p> 6. My favorite game is The World Ends with You. I've played it several times over, and it always sucks in my un<span Class = "S2">divided</span> attention.
+      Admittedly, the original version (which came out for the DS in <span Class="TOYS">2007</span>!) is still the best version. Nevertheless, you should <span Class="S2">buy</span> any copy you can!
+    <p> 7. Christine and I play several board games together, but one of our favorites is the <span class="ALANIS">Dominion</span> collection!
+      We have the original game, <span class="S3">plus</span> twelve expansions! (Honestly, we have probably over <span class = "S2">twenty-five</span> board games in our living room... Sorry, Jonny Chue!)
+      My personal favorite Dominion expansion is <span class = "CAPS">HINTERLANDS</span>, which comes in a green box. <!--Put green class here-->
+    <p> 8. Our current nightly tradition is to play <span class="LoL">League of Legends</span> at <span class = "S1">eight</span> o-clock. It's usually us <span class = "S4">plus</span> my family,
+      sometimes giving us a full group of <span Class = "SORCERESS">five</span>.
+      Christine's favorite skin and champion is Sorceress Lux, while my favorite skin and champion is <span class = "CAPS">Wildfire ZYRA</span>. <!--Put red or orange here-->
+    <p> 9.If there's <span CLASS = "S3">one</span> feeling I can't stand, it's <span class="LoL">velvet</span>... For some reason, it makes my skin crawl...
+      Christine will attack me with velvety hangers to see me recoil.
+    <p> 10. Christine and I like to cook! Our <span class="S4">three</span> favorite dishes we make are:
+      <div class = "TORA">
+      1. KFC (Korean Flavored Chicken)
+      <br> 2. Om-nom-nomlette
+      <br> 3. Japanese Curry (no funny name here; just good food)
+      </div>
+
+  <p>Thank you all for playing this escape room! If you think you've found all four keywords, insert them below.
+  <div class="keywordEntry">
+    <span style="color:blue">First Keyword:</span> <input type="text" name="FirstKeyword" id="Warrior"><br>
+    <span style="color:purple">Second Keyword:</span> <input type="text" name="SecondKeyword" id="Firion"><br>
+    <span style="color:green">Third Keyword:</span> <input type="text" name="ThirdKeyword" id="OnionKnight"><br>
+    <span style="color:red">Fourth Keyword:</span> <input type="text" name="FourthKeyword" id="Cecil"><br>
+    <button type = "button" onclick="sayMyName()">Submit</button>
+  </div>
+
+
+  <script>
+  function sayMyName() {
+    var successCount = 0;
+    var Garland = document.getElementById("Warrior").value;
+    Garland = Garland.replace(/\s+/g, '');
+    var Emperor = document.getElementById("Firion").value;
+    Emperor = Emperor.replace(/\s+/g, '');
+    var CloudOfDarkness = document.getElementById("OnionKnight").value;
+    CloudOfDarkness = CloudOfDarkness.replace(/\s+/g, '');
+    var Golbez = document.getElementById("Cecil").value;
+    Golbez = Golbez.replace(/\s+/g, '');
+
+    if (Garland.toUpperCase() == "DUSTY") {
+      successCount++;
+      var S1Manip = document.getElementsByClassName("S1");
+      for (S1Int = 0; S1Int < 3; S1Int++) {
+        S1Manip[S1Int].classList.add("DUSTY");
+      };
+      document.getElementById("Warrior").style = "color:blue";
+    }
+    else {
+      document.getElementById("Warrior").style = "color:black";
+    };
+
+
+    if (Emperor.toUpperCase() == "HIGGLEDY") {
+      successCount++;
+      var S2Manip = document.getElementsByClassName("S2");
+      for (S2Int = 0; S2Int < 4; S2Int++) {
+        S2Manip[S2Int].classList.add("HIGGLEDY");
+      }
+      document.getElementById("Firion").style = "color:purple";
+    }
+    else {
+      document.getElementById("Firion").style = "color:black";
+    };
+
+    if (CloudOfDarkness.toUpperCase() == "HINTERLANDS") {
+      successCount++;
+      var S3Manip = document.getElementsByClassName("S3");
+      for (S3Int = 0; S3Int < 3; S3Int++) {
+        S3Manip[S3Int].classList.add("HINTERLANDS");
+      }
+      document.getElementById("OnionKnight").style = "color:green";
+    }
+    else {
+      document.getElementById("OnionKnight").style = "color:black";
+    };
+
+    if (Golbez.toUpperCase() == "ZYRA") {
+      successCount++;
+      var S4Manip = document.getElementsByClassName("S4");
+      for (S4Int = 0; S4Int < 3; S4Int++) {
+        S4Manip[S4Int].classList.add("ZYRA");
+      }
+      document.getElementById("Cecil").style = "color:red";
+    }
+    else {
+      document.getElementById("Cecil").style = "color:black";
+    };
+
+    if(successCount == 0) {
+      alert("You didn't find any keywords... Colors and caps are you friends!");
+    }
+    else if (successCount == 4) {
+      alert("Congratulations! You have found all 4 keywords!");
+    }
+    else {
+      alert("You have successfully found " + successCount + " keywords!");
+    }
+};
+  </script>
+
+
+  </body>
+</html>

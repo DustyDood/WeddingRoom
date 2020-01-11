@@ -1,0 +1,13 @@
+body {
+  background-color: #FF9999;
+  font-family: 'Work Sans', sans-serif;
+}
+
+#PityGraph {
+  display: none;
+}
+
+.Beffy, h3 {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: bold;
+}

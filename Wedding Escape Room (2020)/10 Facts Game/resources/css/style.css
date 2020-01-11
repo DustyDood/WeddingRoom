@@ -1,0 +1,54 @@
+html {
+  font-family: helvetica;
+  background-color: lightgrey;
+}
+
+h1 {
+  display: inline-block;
+  color: blue;
+}
+
+.TORA {
+  margin-left: 40px;
+
+}
+
+
+
+
+
+/*
+if you're like me, you're not a fan of CSS! If you don't know what CSS is, that's perfectly fine!
+
+I tried to keep this simple enough, but there are a few keywords that you're looking for throughout the website...
+
+If you find any keywords, please enter the keyword IN ALL CAPS DIRECTLY after the period without leaving a space!
+Example = .KEYWORD {
+
+If you delete the period, it won't work... so don't delete it! Or you could just add it back in haha
+
+After you have added in the four keywords, hit ctrl+s to save this document. Wait 10 seconds, then refresh the internet page.
+
+If you have any questions, ask game master Lisette! She's wearing the red dress
+
+*/
+
+
+/*first keyword*/ .ZYRA {
+  color: red;
+}
+
+/*second keyword*/ .HINTERLANDS {
+  color: green;
+}
+
+/*third keyword*/ .HIGGLEDY {
+  color: purple;
+}
+
+/*fourth keyword*/ .DUSTY {
+  color: blue;
+}
+
+.SORCERESS {
+}

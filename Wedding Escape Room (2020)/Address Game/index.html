@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Story and Room #1</title>
+    <link href="./style.css" style="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Roboto|Rubik&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h3>The events you are about to read are based on a true story.</h3>
+    <h6>In other words, it's mostly false.</h6>
+    <div id = "Story">
+    Our story begins with Beff Jezos, a man with an extraordinary amount of wealth. Beff hit it big in life, making the great company we know today as Nozama.
+    As the old saying goes, "With great wealth comes great eccentrity." This is especially true for Mr. Jezos;
+    today, and today only, Beff is giving away money to his company Nozama.
+    In order to acquire the money, you must learn more about Beff and solve some of his favorite puzzles. Yet, there is a catch:
+    you only have 30 minutes before the website closes and locks you out.
+
+    <p>Do you have what it takes to win Beff Jezos's money?
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>I'll take that as a yes.
+
+
+
+
+
+    <p>Growing up, Jeff was never good with addresses... Try as he might, he always had trouble combining numbers with words.
+      <span id="JezosWhine">"Why can't I just use a 7 character alphanumeric code??"</span> the precocious Beff cried. Ever since that day, Beff vowed to never use a typical address ever again.
+      Instead, he looked into other methods of recording his address, never letting go of his childhood scar.
+      Today, Jezos's first headquarters building, the Doppler building, lies at <span id="Doppler">JM86+2J Seattle, Washington</span>.
+
+    <p>They say that imitation is the most sincere form of flattery. The first puzzle is to submit your current location
+      (University Club UCI Irvine at 801 E Peltason Dr, Irvine, CA 92697) in Mr. Jezos' preferred 7 character alphanumeric form.
+      While this initial task may be daunting, the internet is your friend. Specifically,
+      <span class="Yell">Google Maps</span> is a <span class="Yell">plus</span>.
+      <br>
+      <br>
+      <img src="./PlusCodeSymbol.png" alt="The Plus Code Symbol" style="width:65px;height:50px;">
+
+    <p>If you think you have the right answer, type it into box below and hit submit.
+
+    <div id = "SubmitArea">
+      <input type="text" name="PlusCodeAddress" id="submittedAnswer"> Irvine, CA
+    </div>
+    <button type = "button" onclick="AddressSubmit()">Submit</button>
+
+
+    <script>
+      var pityCount = 0;
+      function AddressSubmit() {
+        var answer = document.getElementById("submittedAnswer").value;
+        answer = answer.replace(/\s+/g, '');
+        //alert(answer);
+        if (answer.toUpperCase() == "J5V4+5X") {
+          alert("Congrats!");
+          window.open("../Franchise game/index.html")
+        }
+        else
+        {
+          pityCount++;
+          alert("I'm sorry, but that is incorrect...");
+          //alert(pityCount);
+          if (pityCount >= 3) {
+            alert("You know, Google Maps and plus being in larger font are a hint... It's almost like they're some kind of CODE.")
+          }
+        }
+      }
+    </script>
+
+
+
+
+  </body>
+</html>

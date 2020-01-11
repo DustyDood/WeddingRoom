@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Table for Battleship Game</title>
+    <link href="./BattleshipTablestyle.css" style="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <h3>A lovely table</h3>
+    <p>This may come in handy!</p>
+
+    <table id="BattleshipTable">
+      <tr> </tr>
+    </table>
+
+
+    <script>
+
+      var gameTable = [
+              ["","A","B","C","D","E","F","G","H","I","J"],
+      				[1,"A","5","F","G","3","W","O","C","W","E"],
+      				[2,"H","J","W","C","Q","L","4","X","S","I"],
+      				[3,"N","B","A","E","9","X","D","J","P","Y"],
+      				[4,"6","N","F","Q","K","5","P","A","Z","4"],
+      				[5,"E","X","H","2","V","C","O","R","B","I"],
+      				[6,"B","D","F","K","7","K","A","X","Q","Z"],
+      				[7,"Q","G","7","V","S","Z","U","N","Q","R"],
+      				[8,"N","2","G","Y","9","E","V","C","A","I"],
+      				[9,"Q","R","C","X","Y","T","5","6","N","T"],
+      				[10,"Z","8","W","B","L","Y","3","N","T","P"]
+            ];
+
+        function TableMaker() {
+          //alert(gameTable[3][2]);
+          var table = document.getElementById("BattleshipTable");
+          for (x = 0; x < 11; x++) {
+            var row = table.insertRow();
+            row.classList.add("Row" + x);
+            for (y = 0; y < 11; y++) {
+              var cell = row.insertCell();
+              cell.classList.add("Column" + y);
+              cell.Id = "" + x + y;
+              cell.align = "middle";
+              cell.innerHTML = gameTable[x][y];
+            }
+          }
+        }
+
+      TableMaker();
+
+
+    </script>
+
+  </body>
+</html>

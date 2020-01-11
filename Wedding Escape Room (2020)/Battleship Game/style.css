@@ -1,0 +1,53 @@
+body {
+  font-family: verdana;
+  background-color: lightgrey;
+}
+
+h1 {
+  font-family: cursive;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+td {
+  width: 10%;
+  height: 60px;
+}
+
+.Beffy {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#Cell03, #Cell04, #Cell05, #Cell06, #Cell36, #Cell46, #Cell56, #Cell64, #Cell74, #Cell84 {
+  display: none;
+
+}
+
+#hashtag {
+  display: none;
+}
+
+.Nia {
+  font-size: 25px;
+  color: #55acee;
+  animation-name: dromarch;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes dromarch {
+  70% {opacity: 1;}
+  80% {opacity: 0;}
+  90% {opacity: 1;}
+}
+
+/*
+.secret {
+  font-size: 50px;
+}
+*/
