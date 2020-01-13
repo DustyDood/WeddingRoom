@@ -34,11 +34,13 @@
     <p>Growing up, Jeff was never good with addresses... Try as he might, he always had trouble combining numbers with words.
       <span id="JezosWhine">"Why can't I just use a 7 character alphanumeric code??"</span> the precocious Beff cried. Ever since that day, Beff vowed to never use a typical address ever again.
       Instead, he looked into other methods of recording his address, never letting go of his childhood scar.
-      Today, Jezos's first headquarters building, the Doppler building, lies at <span id="Doppler">JM86+2J Seattle, Washington</span>.
+      Today, Nozama's first headquarters building, the Doppler building, lies at <span id="Doppler">JM86+2J Seattle, Washington</span>.
+      <br>
 
     <p>They say that imitation is the most sincere form of flattery. The first puzzle is to submit your current location
       (University Club UCI Irvine at 801 E Peltason Dr, Irvine, CA 92697) in Mr. Jezos' preferred 7 character alphanumeric form.
-      While this initial task may be daunting, the internet is your friend. Specifically,
+      While this initial task may be daunting, the internet is your friend.
+      <br>Specifically,
       <span class="Yell">Google Maps</span> is a <span class="Yell">plus</span>.
       <br>
       <br>
@@ -47,7 +49,7 @@
     <p>If you think you have the right answer, type it into box below and hit submit.
 
     <div id = "SubmitArea">
-      <input type="text" name="PlusCodeAddress" id="submittedAnswer"> Irvine, CA
+      <input type="text" maxlength = "7" name="PlusCodeAddress" id="submittedAnswer"> Irvine, CA
     </div>
     <button type = "button" onclick="AddressSubmit()">Submit</button>
 
@@ -60,7 +62,7 @@
         //alert(answer);
         if (answer.toUpperCase() == "J5V4+5X") {
           alert("Congrats!");
-          window.open("../Franchise game/index.html")
+          window.open("../Franchise Game/index.html")
         }
         else
         {
@@ -68,7 +70,7 @@
           alert("I'm sorry, but that is incorrect...");
           //alert(pityCount);
           if (pityCount >= 3) {
-            alert("You know, Google Maps and plus being in larger font are a hint... It's almost like they're some kind of CODE.")
+            alert("You know, GOOGLE MAPS and PLUS being in larger font are a hint... It's almost like they're some kind of CODE.")
           }
         }
       }
