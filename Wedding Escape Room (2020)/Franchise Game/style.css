@@ -11,3 +11,8 @@ body {
   font-family: 'Source Code Pro', monospace;
   font-weight: bold;
 }
+
+#imageBlock img {
+  width:65px;
+  height:50px;"
+}
