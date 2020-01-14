@@ -64,10 +64,10 @@
 
   <p>If you think you've found all four keywords, insert them below and hit the Submit button.</p>
   <div class="keywordEntry">
-    <span style="color:blue">First Keyword:</span> <input type="text" name="FirstKeyword" id="Warrior"><br>
-    <span style="color:purple">Second Keyword:</span> <input type="text" name="SecondKeyword" id="Firion"><br>
-    <span style="color:green">Third Keyword:</span> <input type="text" name="ThirdKeyword" id="OnionKnight"><br>
-    <span style="color:red">Fourth Keyword:</span> <input type="text" name="FourthKeyword" id="Cecil"><br>
+    <span class="DUSTY">First Keyword:</span> <input type="text" name="FirstKeyword" id="Warrior"><br>
+    <span class="HIGGLEDY">Second Keyword:</span> <input type="text" name="SecondKeyword" id="Firion"><br>
+    <span class="HINTERLANDS">Third Keyword:</span> <input type="text" name="ThirdKeyword" id="OnionKnight"><br>
+    <span class="ZYRA">Fourth Keyword:</span> <input type="text" name="FourthKeyword" id="Cecil"><br>
     <button type = "button" onclick="sayMyName()">Submit</button>
   </div>
 
@@ -137,7 +137,7 @@
       for (S2Int = 0; S2Int < 4; S2Int++) {
         S2Manip[S2Int].classList.add("HIGGLEDY");
       }
-      document.getElementById("Firion").style = "color:purple";
+      document.getElementById("Firion").style = "color:#cc33ff";
     }
     else {
       document.getElementById("Firion").style = "color:black";
@@ -149,7 +149,7 @@
       for (S3Int = 0; S3Int < 3; S3Int++) {
         S3Manip[S3Int].classList.add("HINTERLANDS");
       }
-      document.getElementById("OnionKnight").style = "color:green";
+      document.getElementById("OnionKnight").style = "color:lightgreen";
     }
     else {
       document.getElementById("OnionKnight").style = "color:black";
