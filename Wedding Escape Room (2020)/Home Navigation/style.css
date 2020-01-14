@@ -1,0 +1,20 @@
+body {
+  background-color: lightblue;
+  align-self: center;
+  font-family: 'Noto Serif', serif;
+}
+
+h2 {
+  color: red;
+  font-family: 'Gelasio', serif;
+}
+
+.TheRules p::first-line {
+  color: blue;
+  font-family: 'Lobster',cursive;
+}
+
+.TheRules p {
+  color: green;
+  font-family: 'Ubuntu';
+}
