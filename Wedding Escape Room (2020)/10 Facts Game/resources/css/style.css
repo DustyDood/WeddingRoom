@@ -13,42 +13,45 @@ h1 {
 
 }
 
+.Beffy {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#FourDigitLock {
+  color: blue;
+}
 
 
-
-
-/*
-if you're like me, you're not a fan of CSS! If you don't know what CSS is, that's perfectly fine!
-
-I tried to keep this simple enough, but there are a few keywords that you're looking for throughout the website...
-
-If you find any keywords, please enter the keyword IN ALL CAPS DIRECTLY after the period without leaving a space!
-Example = .KEYWORD {
-
-If you delete the period, it won't work... so don't delete it! Or you could just add it back in haha
-
-After you have added in the four keywords, hit ctrl+s to save this document. Wait 10 seconds, then refresh the internet page.
-
-If you have any questions, ask game master Lisette! She's wearing the red dress
-
-*/
-
-
-/*first keyword*/ .ZYRA {
+.ZYRA, #Fourth {
   color: red;
 }
 
-/*second keyword*/ .HINTERLANDS {
+.HINTERLANDS, #Third {
   color: green;
 }
 
-/*third keyword*/ .HIGGLEDY {
+.HIGGLEDY, #Second {
   color: purple;
 }
 
-/*fourth keyword*/ .DUSTY {
+.DUSTY, #First {
   color: blue;
 }
 
 .SORCERESS {
+
+}
+
+#PityGraphOne {
+  display: none;
+}
+
+#PityGraphTwo {
+  display: none;
+}
+
+.Key {
+  font-weight: bold;
 }
