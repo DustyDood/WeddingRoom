@@ -73,10 +73,10 @@
 
   <div class="submission">
     <p>Once you have the
-      <span class = "Key" id="First">f</span>
-      <span class = "Key" id="Second">o</span>
-      <span class = "Key" id="Third">u</span>
-      <span class = "Key" id="Fourth">r</span>
+      <span class = "Key" id="First">F</span>
+      <span class = "Key" id="Second">O</span>
+      <span class = "Key" id="Third">U</span>
+      <span class = "Key" id="Fourth">R</span>
       digit code, enter it here:
       <br>
       <input type="text" maxlength="4" name="FourDigitLock" id="FourDigitLock">
@@ -182,7 +182,8 @@
 
 
 function FourDigitSubmit() {
-  var finalAnswer = document.getElementById("FourDigitLock");
+  var finalAnswer = document.getElementById("FourDigitLock").value;
+  //alert(finalAnswer);
   var correctAnswer = "9845";
   if (finalAnswer == correctAnswer) {
     alert("You hear a click and the lock opens. You're on a roll!");
